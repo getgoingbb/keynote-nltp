@@ -31,8 +31,19 @@
       theme: {
         extend: {
           colors: {
-            forest: { 900: '#052e16', 800: '#14532d', 700: '#166534', 600: '#15803d', 400: '#4ade80', 300: '#86efac' },
-            slate: { 950: '#020617' }
+            stage: {
+              50:  '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              300: '#fcd34d',
+              400: '#f59e0b',
+              500: '#d97706',
+              600: '#1e3a6e',
+              700: '#162d57',
+              800: '#0e2040',
+              900: '#07142a',
+              950: '#030b18',
+            }
           },
           fontFamily: { display: ['"Inter"', 'system-ui', 'sans-serif'] }
         }
@@ -44,32 +55,137 @@
 
   <style>
     html { scroll-behavior: smooth; }
-    .hero-bg { background: linear-gradient(135deg, #052e16 0%, #0f172a 60%, #1e1b4b 100%); }
-    .stat-card { backdrop-filter: blur(12px); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); }
+    .hero-bg { background: linear-gradient(135deg, #07142a 0%, #0f172a 55%, #1e1b4b 100%); }
+    .stat-card { backdrop-filter: blur(12px); background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); }
     .section-alt { background: #f8fafc; }
-    .cta-glow { box-shadow: 0 0 40px rgba(74,222,128,0.3); }
+    .cta-glow { box-shadow: 0 0 40px rgba(245,158,11,0.35); }
+    .gold-bar { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
     @keyframes fadeUp { from { opacity:0; transform:translateY(24px); } to { opacity:1; transform:translateY(0); } }
     .fade-up { animation: fadeUp 0.7s ease forwards; }
     .delay-1 { animation-delay: 0.1s; opacity:0; }
     .delay-2 { animation-delay: 0.25s; opacity:0; }
     .delay-3 { animation-delay: 0.4s; opacity:0; }
+    .video-thumb-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .video-thumb-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 50px rgba(0,0,0,0.4); }
   </style>
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://neverleavetheplayground.com/#stephen-jepson",
+  "name": "Stephen Jepson",
+  "url": "https://neverleavetheplayground.com",
+  "image": "https://neverleavetheplayground.com/images/stephen-profile.jpg",
+  "description": "Pioneer in active aging and brain health through playful movement. Former UCF professor, award-winning potter, and movement educator at 85 years young.",
+  "jobTitle": "Movement Educator, Keynote Speaker, Professor Emeritus",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Never Leave The Playground"
+  },
+  "knowsAbout": [
+    "Active Aging",
+    "Neuroplasticity",
+    "Brain Health",
+    "Playful Movement",
+    "Pottery",
+    "Fall Prevention",
+    "Balance Training"
+  ],
+  "award": "Work in Smithsonian American Art Museum collection",
+  "sameAs": [
+    "https://keynote-speaker.neverleavetheplayground.com",
+    "https://jepsonpotteryvideos.com",
+    "https://slides.neverleavetheplayground.com"
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://keynote-speaker.neverleavetheplayground.com/#speaking",
+  "name": "Stephen Jepson \u2014 Keynote Speaker",
+  "description": "Stephen Jepson delivers powerful keynote speeches on active aging, neuroplasticity, and the transformative power of play for wellness and longevity conferences.",
+  "provider": {
+    "@type": "Person",
+    "name": "Stephen Jepson",
+    "@id": "https://neverleavetheplayground.com/#stephen-jepson"
+  },
+  "serviceType": "Keynote Speaking",
+  "areaServed": "Worldwide",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Wellness, Aging, Healthcare, Leadership conferences"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Stephen Jepson Keynote \u2014 Never Leave The Playground",
+  "description": "Stephen Jepson demonstrates his revolutionary approach to active aging, movement, and brain health.",
+  "thumbnailUrl": "https://img.youtube.com/vi/VkTwjxZ3KJg/maxresdefault.jpg",
+  "embedUrl": "https://www.youtube.com/embed/VkTwjxZ3KJg",
+  "contentUrl": "https://youtu.be/VkTwjxZ3KJg",
+  "uploadDate": "2024-01-01",
+  "author": {
+    "@type": "Person",
+    "name": "Stephen Jepson"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Stephen Jepson \u2014 Movement for Brain Health",
+  "description": "Stephen Jepson on neuroplasticity, balance training, and playful movement for longevity.",
+  "thumbnailUrl": "https://img.youtube.com/vi/WhYhofOs3KU/maxresdefault.jpg",
+  "embedUrl": "https://www.youtube.com/embed/WhYhofOs3KU",
+  "contentUrl": "https://youtu.be/WhYhofOs3KU",
+  "uploadDate": "2024-01-01",
+  "author": {
+    "@type": "Person",
+    "name": "Stephen Jepson"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Stephen Jepson \u2014 Active Aging Revolution",
+  "description": "Stephen Jepson demonstrates playground exercises that transform health and brain function at any age.",
+  "thumbnailUrl": "https://img.youtube.com/vi/m6KrVBWtE_0/maxresdefault.jpg",
+  "embedUrl": "https://www.youtube.com/embed/m6KrVBWtE_0",
+  "contentUrl": "https://youtu.be/m6KrVBWtE_0",
+  "uploadDate": "2024-01-01",
+  "author": {
+    "@type": "Person",
+    "name": "Stephen Jepson"
+  }
+}
+  </script>
 </head>
 <body class="font-display bg-white text-gray-900 antialiased">
 
   <!-- ── NAV ─────────────────────────────────────────────────────── -->
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-forest-900/95 backdrop-blur border-b border-forest-800">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-stage-950/95 backdrop-blur border-b border-stage-800">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-      <a href="/" class="text-white font-bold text-lg tracking-tight">
-        <span class="text-forest-400">Never Leave</span> The Playground
+      <a href="/" class="flex items-center gap-2 text-white font-bold text-lg tracking-tight">
+        <img src="/images/nltp-logo.webp" alt="Never Leave The Playground" class="h-10 w-10 rounded-lg">
+        <span><span class="text-stage-400">Never Leave</span> The Playground</span>
       </a>
       <div class="hidden md:flex items-center gap-6 text-sm text-gray-300">
         <a href="#about" class="hover:text-white transition">About Stephen</a>
+        <a href="#videos" class="hover:text-white transition">Watch</a>
         <a href="#offerings" class="hover:text-white transition">Offerings</a>
         <a href="#testimonials" class="hover:text-white transition">Reviews</a>
-        <a href="#book" class="bg-forest-600 hover:bg-forest-700 text-white px-5 py-2 rounded-full font-semibold transition">Book Stephen</a>
+        <a href="#book" class="bg-stage-400 hover:bg-stage-300 text-gray-900 px-5 py-2 rounded-full font-semibold transition">Book Stephen</a>
       </div>
-      <a href="#book" class="md:hidden bg-forest-600 text-white px-4 py-2 rounded-full text-sm font-semibold">Book</a>
+      <a href="#book" class="md:hidden bg-stage-400 text-gray-900 px-4 py-2 rounded-full text-sm font-semibold">Book</a>
     </div>
   </nav>
 
@@ -77,35 +193,35 @@
   <section class="hero-bg min-h-screen flex items-center pt-16">
     <div class="max-w-6xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-16 items-center">
       <div>
-        <div class="inline-flex items-center gap-2 bg-forest-800/60 border border-forest-700 text-forest-300 text-xs font-semibold px-4 py-2 rounded-full mb-8 fade-up">
-          <span class="w-2 h-2 bg-forest-400 rounded-full animate-pulse"></span>
+        <div class="inline-flex items-center gap-2 bg-stage-800/70 border border-stage-700 text-stage-300 text-xs font-semibold px-4 py-2 rounded-full mb-8 fade-up">
+          <span class="w-2 h-2 bg-stage-400 rounded-full animate-pulse"></span>
           Available for 2026 Events
         </div>
         <h1 class="text-5xl md:text-6xl font-black text-white leading-tight mb-6 fade-up delay-1">
           The Most<br>
-          <span class="text-forest-400">Extraordinary</span><br>
+          <span class="text-stage-400">Extraordinary</span><br>
           85-Year-Old<br>You'll Ever Meet
         </h1>
         <p class="text-gray-300 text-xl leading-relaxed mb-10 fade-up delay-2">
           Stephen Jepson juggles, balances, plays — and has been doing it every day for decades. His keynote doesn't just inspire your audience. It rewires how they think about movement, aging, and what's possible.
         </p>
         <div class="flex flex-wrap gap-4 fade-up delay-3">
-          <a href="#book" class="bg-forest-500 hover:bg-forest-400 text-forest-900 font-black px-8 py-4 rounded-xl text-lg transition cta-glow">
+          <a href="#book" class="bg-stage-400 hover:bg-stage-300 text-gray-900 font-black px-8 py-4 rounded-xl text-lg transition cta-glow">
             Book Stephen →
           </a>
-          <a href="https://en.neverleavetheplayground.com/speaking-events" target="_blank"
-             class="border border-gray-600 hover:border-forest-400 text-white px-8 py-4 rounded-xl text-lg font-semibold transition">
-            See Speaking Info
+          <a href="#videos"
+             class="border border-gray-500 hover:border-stage-400 text-white px-8 py-4 rounded-xl text-lg font-semibold transition">
+            Watch Him Speak
           </a>
         </div>
       </div>
       <div class="relative">
-        <div class="absolute inset-0 bg-forest-600/20 rounded-3xl blur-3xl"></div>
+        <div class="absolute inset-0 bg-stage-400/10 rounded-3xl blur-3xl"></div>
         <img src="images/stephen-balance.jpg" alt="Stephen Jepson balancing"
-             class="relative rounded-3xl w-full object-cover shadow-2xl border border-forest-800"
+             class="relative rounded-3xl w-full object-cover shadow-2xl border border-stage-800"
              style="max-height:520px; object-position: top;">
         <div class="absolute -bottom-6 -left-6 stat-card rounded-2xl px-6 py-4">
-          <div class="text-4xl font-black text-forest-400">50+</div>
+          <div class="text-4xl font-black text-stage-400">50+</div>
           <div class="text-gray-300 text-sm">Years of Daily Play</div>
         </div>
         <div class="absolute -top-4 -right-4 stat-card rounded-2xl px-6 py-4">
@@ -116,15 +232,18 @@
     </div>
   </section>
 
+  <!-- ── GOLD ACCENT BAR ──────────────────────────────────────────── -->
+  <div class="gold-bar py-1"></div>
+
   <!-- ── SOCIAL PROOF STRIP ───────────────────────────────────────── -->
-  <div class="bg-forest-800 py-6">
-    <div class="max-w-6xl mx-auto px-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm text-forest-300 font-semibold">
-      <span>✦ Wellness Conferences</span>
-      <span>✦ HR Leadership Summits</span>
-      <span>✦ Healthcare Organizations</span>
-      <span>✦ Universities &amp; Schools</span>
-      <span>✦ Corporate Wellness Programs</span>
-      <span>✦ Aging &amp; Senior Living</span>
+  <div class="bg-stage-900 py-6">
+    <div class="max-w-6xl mx-auto px-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm text-gray-300 font-semibold">
+      <span class="text-stage-300">✦ Wellness Conferences</span>
+      <span class="text-stage-300">✦ HR Leadership Summits</span>
+      <span class="text-stage-300">✦ Healthcare Organizations</span>
+      <span class="text-stage-300">✦ Universities &amp; Schools</span>
+      <span class="text-stage-300">✦ Corporate Wellness Programs</span>
+      <span class="text-stage-300">✦ Aging &amp; Senior Living</span>
     </div>
   </div>
 
@@ -136,11 +255,12 @@
              class="rounded-2xl w-full h-48 object-cover shadow-lg col-span-1">
         <img src="images/Anchorpoint.Training.Stephen.Jepson2.jpg" alt="Stephen training"
              class="rounded-2xl w-full h-48 object-cover shadow-lg col-span-1 mt-8">
-        <img src="images/1-Setup-a-Jumping-Course-on-Your-Playground.Stephen.Jepson.jpg"
-             alt="Stephen jumping" class="rounded-2xl w-full h-48 object-cover shadow-lg col-span-2">
+        <img src="https://keep-moving.netlify.app/speaking-events_files/keynote-speaker-2.jpg"
+             alt="Stephen Jepson on stage as keynote speaker"
+             class="rounded-2xl w-full h-52 object-cover object-top shadow-lg col-span-2">
       </div>
       <div>
-        <p class="text-forest-700 font-bold text-sm uppercase tracking-widest mb-4">The Story</p>
+        <p class="text-stage-600 font-bold text-sm uppercase tracking-widest mb-4">The Story</p>
         <h2 class="text-4xl font-black text-gray-900 leading-tight mb-6">
           Play Isn't Just for Kids.<br>It's the Secret to Everything.
         </h2>
@@ -151,39 +271,80 @@
           When Stephen speaks, audiences don't sit and listen. They get up, move, and leave changed. Organizations across the US have brought him in to transform how their people think about health, longevity, and performance.
         </p>
         <div class="flex flex-wrap gap-4">
-          <div class="bg-forest-50 border border-forest-200 rounded-xl px-5 py-3 text-center">
-            <div class="text-2xl font-black text-forest-700">2,500+</div>
-            <div class="text-xs text-gray-500 font-medium">Students Trained</div>
+          <div class="bg-stage-50 border border-stage-200 rounded-xl px-5 py-3 text-center">
+            <div class="text-2xl font-black text-stage-600">27+</div>
+            <div class="text-xs text-gray-500 font-medium">Keynote Events</div>
           </div>
-          <div class="bg-forest-50 border border-forest-200 rounded-xl px-5 py-3 text-center">
-            <div class="text-2xl font-black text-forest-700">5 ★</div>
+          <div class="bg-stage-50 border border-stage-200 rounded-xl px-5 py-3 text-center">
+            <div class="text-2xl font-black text-stage-600">5 ★</div>
             <div class="text-xs text-gray-500 font-medium">Rave Reviews</div>
           </div>
-          <div class="bg-forest-50 border border-forest-200 rounded-xl px-5 py-3 text-center">
-            <div class="text-2xl font-black text-forest-700">Int'l</div>
+          <div class="bg-stage-50 border border-stage-200 rounded-xl px-5 py-3 text-center">
+            <div class="text-2xl font-black text-stage-600">Int'l</div>
             <div class="text-xs text-gray-500 font-medium">Speaker</div>
+          </div>
+          <div class="bg-stage-50 border border-stage-200 rounded-xl px-5 py-3 text-center">
+            <div class="text-2xl font-black text-stage-600">2,500+</div>
+            <div class="text-xs text-gray-500 font-medium">Students Trained</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── VIDEO ────────────────────────────────────────────────────── -->
-  <section class="py-20 bg-gray-950">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <p class="text-forest-400 font-bold text-sm uppercase tracking-widest mb-4">See It To Believe It</p>
-      <h2 class="text-4xl font-black text-white mb-10">Watch Stephen in Action</h2>
-      <div class="relative rounded-2xl overflow-hidden shadow-2xl" style="padding-top:56.25%;">
-        <iframe class="absolute inset-0 w-full h-full"
-          src="https://www.youtube.com/embed/m6KrVBWtE_0"
-          title="Stephen Jepson Never Leave The Playground"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
+  <!-- ── VIDEOS ──────────────────────────────────────────────────── -->
+  <section id="videos" class="py-20 bg-stage-950">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-14">
+        <p class="text-stage-400 font-bold text-sm uppercase tracking-widest mb-4">See It To Believe It</p>
+        <h2 class="text-4xl font-black text-white mb-4">Watch Stephen in Action</h2>
+        <p class="text-gray-400 text-lg max-w-2xl mx-auto">A speaker demo reel and the story behind the man — two videos that answer the question: "Who is Stephen Jepson?"</p>
       </div>
-      <p class="text-gray-400 mt-6">
+
+      <!-- Primary: Speaking demo -->
+      <div class="mb-10">
+        <p class="text-stage-300 font-semibold text-sm uppercase tracking-widest mb-4 text-center">🎤 Keynote Speaking Demo</p>
+        <div class="relative rounded-2xl overflow-hidden shadow-2xl video-thumb-hover border border-stage-800" style="padding-top:56.25%;">
+          <iframe class="absolute inset-0 w-full h-full"
+            src="https://www.youtube.com/embed/VkTwjxZ3KJg"
+            title="Stephen Jepson Keynote Speaking"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- Secondary: Two smaller videos side by side -->
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <p class="text-gray-400 font-semibold text-sm uppercase tracking-widest mb-3">🏺 The Man Behind the Mission</p>
+          <div class="relative rounded-xl overflow-hidden shadow-xl video-thumb-hover border border-stage-800" style="padding-top:56.25%;">
+            <iframe class="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/WhYhofOs3KU"
+              title="Stephen Jepson — Story and Philosophy"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <p class="text-gray-500 text-sm mt-3">Master potter, educator, and movement pioneer — see the full story.</p>
+        </div>
+        <div>
+          <p class="text-gray-400 font-semibold text-sm uppercase tracking-widest mb-3">🎬 Never Leave The Playground</p>
+          <div class="relative rounded-xl overflow-hidden shadow-xl video-thumb-hover border border-stage-800" style="padding-top:56.25%;">
+            <iframe class="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/m6KrVBWtE_0"
+              title="Stephen Jepson Never Leave The Playground"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <p class="text-gray-500 text-sm mt-3">The movement philosophy that has changed thousands of lives.</p>
+        </div>
+      </div>
+
+      <p class="text-center mt-10">
         <a href="https://videos.neverleavetheplayground.com/" target="_blank"
-           class="text-forest-400 hover:text-forest-300 font-semibold transition">
+           class="text-stage-400 hover:text-stage-300 font-semibold transition">
           See full video library →
         </a>
       </p>
@@ -194,43 +355,92 @@
   <section id="offerings" class="py-24 section-alt">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-16">
-        <p class="text-forest-700 font-bold text-sm uppercase tracking-widest mb-3">What Stephen Delivers</p>
+        <p class="text-stage-600 font-bold text-sm uppercase tracking-widest mb-3">What Stephen Delivers</p>
         <h2 class="text-4xl font-black text-gray-900">Presentations Built to Move People</h2>
         <p class="text-gray-500 text-lg mt-4 max-w-2xl mx-auto">Every format is interactive, high-energy, and built around Stephen's core message: the body and mind thrive when we play.</p>
       </div>
       <div class="grid md:grid-cols-3 gap-8">
         <!-- Keynote -->
         <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition">
-          <div class="w-14 h-14 bg-forest-100 rounded-xl flex items-center justify-center text-2xl mb-6">🎤</div>
+          <div class="w-14 h-14 bg-stage-100 rounded-xl flex items-center justify-center text-2xl mb-6">🎤</div>
           <h3 class="text-xl font-black text-gray-900 mb-3">Keynote Presentation</h3>
           <p class="text-gray-600 leading-relaxed mb-6">Stephen's signature talk on movement, neuroplasticity, and aging. Audiences walk away with a completely different understanding of what their bodies and brains can do — and why play is the missing ingredient.</p>
           <ul class="text-sm text-gray-500 space-y-2">
-            <li class="flex gap-2"><span class="text-forest-500">✓</span> 45–90 minutes</li>
-            <li class="flex gap-2"><span class="text-forest-500">✓</span> Any audience size</li>
-            <li class="flex gap-2"><span class="text-forest-500">✓</span> Q&amp;A available</li>
+            <li class="flex gap-2"><span class="text-stage-500">✓</span> 45–90 minutes</li>
+            <li class="flex gap-2"><span class="text-stage-500">✓</span> Any audience size</li>
+            <li class="flex gap-2"><span class="text-stage-500">✓</span> Q&amp;A available</li>
           </ul>
         </div>
         <!-- Workshop -->
-        <div class="bg-forest-900 rounded-2xl p-8 shadow-sm border border-forest-800 hover:shadow-md transition">
-          <div class="w-14 h-14 bg-forest-800 rounded-xl flex items-center justify-center text-2xl mb-6">🏃</div>
+        <div class="bg-stage-900 rounded-2xl p-8 shadow-sm border border-stage-800 hover:shadow-md transition">
+          <div class="w-14 h-14 bg-stage-800 rounded-xl flex items-center justify-center text-2xl mb-6">🏃</div>
           <h3 class="text-xl font-black text-white mb-3">Interactive Workshop</h3>
-          <p class="text-forest-300 leading-relaxed mb-6">Hands-on sessions where participants experience Stephen's movement principles directly. Juggling, balancing, coordination challenges — all designed to activate brain pathways and build teamwork.</p>
-          <ul class="text-sm text-forest-400 space-y-2">
-            <li class="flex gap-2"><span class="text-forest-400">✓</span> Half-day or full-day</li>
-            <li class="flex gap-2"><span class="text-forest-400">✓</span> Groups up to 50</li>
-            <li class="flex gap-2"><span class="text-forest-400">✓</span> All skill levels</li>
+          <p class="text-gray-300 leading-relaxed mb-6">Hands-on sessions where participants experience Stephen's movement principles directly. Juggling, balancing, coordination challenges — all designed to activate brain pathways and build teamwork.</p>
+          <ul class="text-sm text-gray-400 space-y-2">
+            <li class="flex gap-2"><span class="text-stage-400">✓</span> Half-day or full-day</li>
+            <li class="flex gap-2"><span class="text-stage-400">✓</span> Groups up to 50</li>
+            <li class="flex gap-2"><span class="text-stage-400">✓</span> All skill levels</li>
           </ul>
         </div>
         <!-- Team Building -->
         <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition">
-          <div class="w-14 h-14 bg-forest-100 rounded-xl flex items-center justify-center text-2xl mb-6">🤝</div>
+          <div class="w-14 h-14 bg-stage-100 rounded-xl flex items-center justify-center text-2xl mb-6">🤝</div>
           <h3 class="text-xl font-black text-gray-900 mb-3">Team Building</h3>
           <p class="text-gray-600 leading-relaxed mb-6">Play-based activities that build trust, communication, and shared purpose across teams. Based on decades of research showing that physical play accelerates collaboration and creative thinking.</p>
           <ul class="text-sm text-gray-500 space-y-2">
-            <li class="flex gap-2"><span class="text-forest-500">✓</span> Corporate &amp; non-profit</li>
-            <li class="flex gap-2"><span class="text-forest-500">✓</span> Custom activities</li>
-            <li class="flex gap-2"><span class="text-forest-500">✓</span> Measurable outcomes</li>
+            <li class="flex gap-2"><span class="text-stage-500">✓</span> Corporate &amp; non-profit</li>
+            <li class="flex gap-2"><span class="text-stage-500">✓</span> Custom activities</li>
+            <li class="flex gap-2"><span class="text-stage-500">✓</span> Measurable outcomes</li>
           </ul>
+        </div>
+      </div>
+
+      <!-- Speaking topics strip -->
+      <div class="mt-16 bg-white rounded-2xl border border-gray-100 p-10 shadow-sm">
+        <h3 class="text-2xl font-black text-gray-900 text-center mb-8">Key Speaking Topics</h3>
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div class="flex items-start gap-3 p-4 rounded-xl bg-stage-50 border border-stage-100">
+            <span class="text-stage-500 text-xl mt-0.5">⚡</span>
+            <div>
+              <div class="font-bold text-gray-900 text-sm">Neuroplasticity &amp; Play</div>
+              <div class="text-gray-500 text-xs mt-1">How movement rewires the brain at any age</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 rounded-xl bg-stage-50 border border-stage-100">
+            <span class="text-stage-500 text-xl mt-0.5">🧠</span>
+            <div>
+              <div class="font-bold text-gray-900 text-sm">Healthy Aging</div>
+              <div class="text-xs text-gray-500 mt-1">Disease prevention through daily physical play</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 rounded-xl bg-stage-50 border border-stage-100">
+            <span class="text-stage-500 text-xl mt-0.5">💪</span>
+            <div>
+              <div class="font-bold text-gray-900 text-sm">Mobility &amp; Balance</div>
+              <div class="text-xs text-gray-500 mt-1">Simple games that restore coordination and strength</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 rounded-xl bg-stage-50 border border-stage-100">
+            <span class="text-stage-500 text-xl mt-0.5">🚀</span>
+            <div>
+              <div class="font-bold text-gray-900 text-sm">Workplace Performance</div>
+              <div class="text-xs text-gray-500 mt-1">How physical play improves productivity and focus</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 rounded-xl bg-stage-50 border border-stage-100">
+            <span class="text-stage-500 text-xl mt-0.5">🌱</span>
+            <div>
+              <div class="font-bold text-gray-900 text-sm">Longevity Mindset</div>
+              <div class="text-xs text-gray-500 mt-1">Why growing older means growing stronger</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 rounded-xl bg-stage-50 border border-stage-100">
+            <span class="text-stage-500 text-xl mt-0.5">🤝</span>
+            <div>
+              <div class="font-bold text-gray-900 text-sm">Social &amp; Community Health</div>
+              <div class="text-xs text-gray-500 mt-1">Play as a foundation for connection and belonging</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -240,7 +450,7 @@
   <section id="testimonials" class="py-24 bg-white">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-16">
-        <p class="text-forest-700 font-bold text-sm uppercase tracking-widest mb-3">What People Say</p>
+        <p class="text-stage-600 font-bold text-sm uppercase tracking-widest mb-3">What People Say</p>
         <h2 class="text-4xl font-black text-gray-900">Audiences Rave</h2>
       </div>
       <div class="grid md:grid-cols-3 gap-6">
@@ -250,23 +460,23 @@
           </div>
           <p class="text-gray-700 leading-relaxed mb-6 italic">"Stephen's presentation was not just informative but incredibly engaging. Our team left motivated and eager to implement his strategies!"</p>
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-forest-100 rounded-full flex items-center justify-center text-forest-700 font-bold">M</div>
+            <div class="w-10 h-10 bg-stage-100 rounded-full flex items-center justify-center text-stage-700 font-bold">M</div>
             <div>
               <div class="font-semibold text-gray-900 text-sm">Michael Johnson</div>
               <div class="text-gray-400 text-xs">Wellness Conference</div>
             </div>
           </div>
         </div>
-        <div class="bg-forest-900 rounded-2xl p-8 border border-forest-800">
+        <div class="bg-stage-900 rounded-2xl p-8 border border-stage-800">
           <div class="flex gap-1 mb-4">
             <span class="text-yellow-400 text-lg">★★★★★</span>
           </div>
-          <p class="text-forest-200 leading-relaxed mb-6 italic">"I've never seen an audience this energized. Stephen literally had 300 executives juggling within the first 10 minutes. Pure magic."</p>
+          <p class="text-gray-200 leading-relaxed mb-6 italic">"I've never seen an audience this energized. Stephen literally had 300 executives juggling within the first 10 minutes. Pure magic."</p>
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-forest-800 rounded-full flex items-center justify-center text-forest-400 font-bold">S</div>
+            <div class="w-10 h-10 bg-stage-800 rounded-full flex items-center justify-center text-stage-400 font-bold">S</div>
             <div>
               <div class="font-semibold text-white text-sm">Sandra K.</div>
-              <div class="text-forest-400 text-xs">HR Summit Organizer</div>
+              <div class="text-stage-400 text-xs">HR Summit Organizer</div>
             </div>
           </div>
         </div>
@@ -276,7 +486,7 @@
           </div>
           <p class="text-gray-700 leading-relaxed mb-6 italic">"We hired Stephen for our senior living conference and the response was overwhelming. His message about aging and play changed the whole conversation."</p>
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-forest-100 rounded-full flex items-center justify-center text-forest-700 font-bold">D</div>
+            <div class="w-10 h-10 bg-stage-100 rounded-full flex items-center justify-center text-stage-700 font-bold">D</div>
             <div>
               <div class="font-semibold text-gray-900 text-sm">Dr. Lisa T.</div>
               <div class="text-gray-400 text-xs">Healthcare Conference</div>
@@ -285,9 +495,9 @@
         </div>
       </div>
       <div class="text-center mt-10">
-        <a href="https://en.neverleavetheplayground.com/happy-clients-reviews-happy-clients-rave"
+        <a href="https://neverleavetheplayground.com/reviews"
            target="_blank"
-           class="text-forest-700 hover:text-forest-600 font-semibold transition">
+           class="text-stage-600 hover:text-stage-700 font-semibold transition">
           Read more reviews →
         </a>
       </div>
@@ -297,7 +507,7 @@
   <!-- ── BOOK CTA ─────────────────────────────────────────────────── -->
   <section id="book" class="py-24 hero-bg">
     <div class="max-w-3xl mx-auto px-6 text-center">
-      <p class="text-forest-400 font-bold text-sm uppercase tracking-widest mb-4">Ready to Book?</p>
+      <p class="text-stage-400 font-bold text-sm uppercase tracking-widest mb-4">Ready to Book?</p>
       <h2 class="text-5xl font-black text-white leading-tight mb-6">
         Bring Stephen to<br>Your Next Event
       </h2>
@@ -306,45 +516,58 @@
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a href="https://never-leave-the-playground.mailchimpsites.com/" target="_blank"
-           class="bg-forest-500 hover:bg-forest-400 text-forest-900 font-black px-10 py-5 rounded-xl text-lg transition cta-glow">
+           class="bg-stage-400 hover:bg-stage-300 text-gray-900 font-black px-10 py-5 rounded-xl text-lg transition cta-glow">
           Check Availability &amp; Book
         </a>
-        <a href="https://en.neverleavetheplayground.com/speaking-events" target="_blank"
-           class="border border-gray-600 hover:border-forest-400 text-white px-10 py-5 rounded-xl text-lg font-semibold transition">
+        <a href="https://neverleavetheplayground.com/a-health-revolution" target="_blank"
+           class="border border-gray-500 hover:border-stage-400 text-white px-10 py-5 rounded-xl text-lg font-semibold transition">
           More Info
         </a>
       </div>
-      <p class="text-gray-500 text-sm mt-8">
-        Or email directly: <a href="mailto:stephen@neverleavetheplayground.com"
-          class="text-forest-400 hover:text-forest-300 transition">stephen@neverleavetheplayground.com</a>
-      </p>
+      <div class="mt-10 flex flex-wrap justify-center gap-8 text-sm text-gray-400">
+        <a href="tel:4073495587" class="hover:text-stage-400 transition">📞 (407) 349-5587</a>
+        <a href="mailto:stephen@neverleavetheplayground.com"
+          class="hover:text-stage-400 transition">✉️ stephen@neverleavetheplayground.com</a>
+        <span>📍 Geneva, Florida</span>
+      </div>
     </div>
   </section>
 
   <!-- ── NETWORK FOOTER ───────────────────────────────────────────── -->
-  <section style="background:linear-gradient(135deg,#14532d,#166534);padding:60px 24px;text-align:center;color:#fff;font-family:-apple-system,BlinkMacSystemFont,sans-serif;">
+  <section style="background:linear-gradient(135deg,#0e2040,#1e3a6e);padding:60px 24px;text-align:center;color:#fff;font-family:-apple-system,BlinkMacSystemFont,sans-serif;">
     <h2 style="font-size:clamp(1.5rem,4vw,2.2rem);font-weight:800;margin:0 0 16px;line-height:1.2;">Ready to Never Leave The Playground?</h2>
-    <p style="font-size:1.1rem;opacity:.9;max-width:600px;margin:0 auto 32px;line-height:1.6;">Stephen's video program has helped thousands rebuild balance, coordination, and confidence — at any age.</p>
+    <p style="font-size:1.1rem;opacity:.85;max-width:600px;margin:0 auto 32px;line-height:1.6;">Stephen's video program has helped thousands rebuild balance, coordination, and confidence — at any age.</p>
     <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-      <a href="https://shop.neverleavetheplayground.com/" style="display:inline-block;background:#facc15;color:#14532d;padding:14px 28px;border-radius:8px;font-weight:700;text-decoration:none;">Get Stephen's Videos →</a>
-      <a href="https://neverleavetheplayground.com/" style="display:inline-block;border:2px solid #fff;color:#fff;padding:14px 28px;border-radius:8px;font-weight:600;text-decoration:none;">Learn the Program</a>
-      <a href="https://playgrounds.neverleavetheplayground.com/" style="display:inline-block;border:2px solid #fff;color:#fff;padding:14px 28px;border-radius:8px;font-weight:600;text-decoration:none;">Find a Playground</a>
+      <a href="https://shop.neverleavetheplayground.com/" style="display:inline-block;background:#f59e0b;color:#07142a;padding:14px 28px;border-radius:8px;font-weight:700;text-decoration:none;">Get Stephen's Videos →</a>
+      <a href="https://neverleavetheplayground.com/" style="display:inline-block;border:2px solid rgba(255,255,255,0.6);color:#fff;padding:14px 28px;border-radius:8px;font-weight:600;text-decoration:none;">Learn the Program</a>
+      <a href="https://playgrounds.neverleavetheplayground.com/" style="display:inline-block;border:2px solid rgba(255,255,255,0.6);color:#fff;padding:14px 28px;border-radius:8px;font-weight:600;text-decoration:none;">Find a Playground</a>
     </div>
   </section>
 
-  <footer style="background:#0f172a;color:#94a3b8;padding:32px 24px;text-align:center;font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:14px;">
+  <footer style="background:#030b18;color:#94a3b8;padding:32px 24px;text-align:center;font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:14px;">
     <p style="font-weight:700;color:#e2e8f0;margin:0 0 12px;">Never Leave The Playground — Network</p>
     <nav style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px 20px;margin-bottom:16px;">
-      <a href="https://neverleavetheplayground.com/" style="color:#86efac;text-decoration:none;">Home</a>
-      <a href="https://blog.neverleavetheplayground.com/" style="color:#86efac;text-decoration:none;">Blog</a>
-      <a href="https://videos.neverleavetheplayground.com/" style="color:#86efac;text-decoration:none;">Videos</a>
-      <a href="https://slides.neverleavetheplayground.com/" style="color:#86efac;text-decoration:none;">Slides</a>
-      <a href="https://shop.neverleavetheplayground.com/" style="color:#86efac;text-decoration:none;">Video Shop</a>
-      <a href="https://au.neverleavetheplayground.com/" style="color:#86efac;text-decoration:none;">Australia</a>
-      <a href="https://playgrounds.neverleavetheplayground.com/" style="color:#86efac;text-decoration:none;">Find Playgrounds</a>
-      <a href="https://jepsonpotteryvideos.com/" style="color:#86efac;text-decoration:none;">Pottery Videos</a>
+      <a href="https://neverleavetheplayground.com/" style="color:#fbbf24;text-decoration:none;">Home</a>
+      <a href="https://blog.neverleavetheplayground.com/" style="color:#fbbf24;text-decoration:none;">Blog</a>
+      <a href="https://videos.neverleavetheplayground.com/" style="color:#fbbf24;text-decoration:none;">Videos</a>
+      <a href="https://slides.neverleavetheplayground.com/" style="color:#fbbf24;text-decoration:none;">Slides</a>
+      <a href="https://shop.neverleavetheplayground.com/" style="color:#fbbf24;text-decoration:none;">Video Shop</a>
+      <a href="https://au.neverleavetheplayground.com/" style="color:#fbbf24;text-decoration:none;">Australia</a>
+      <a href="https://playgrounds.neverleavetheplayground.com/" style="color:#fbbf24;text-decoration:none;">Find Playgrounds</a>
+      <a href="https://jepsonpotteryvideos.com/" style="color:#fbbf24;text-decoration:none;">Pottery Videos</a>
     </nav>
     <p style="margin:0;font-size:12px;">© 2025 Stephen Jepson — Never Leave The Playground</p>
+    <div style="margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1);">
+      <p style="margin:0 0 12px;font-size:13px;color:#94a3b8;">Download the <strong style="color:#e2e8f0;">Playground Finder</strong> App — Find playgrounds near you</p>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;">
+        <a href="https://play.google.com/store/apps/details?id=com.neverleavetheplayground.playgroundfinder" target="_blank" rel="noopener noreferrer">
+          <img src="/images/google-play.png" alt="Get it on Google Play" style="height:40px;border-radius:6px;">
+        </a>
+        <a href="https://apps.microsoft.com/detail/9p76brrgkrbd?hl=en-US&gl=US" target="_blank" rel="noopener noreferrer">
+          <img src="/images/ms-store.webp" alt="Download from Windows Store" style="height:40px;border-radius:6px;">
+        </a>
+      </div>
+    </div>
   </footer>
 
   <!-- Chatbot -->
