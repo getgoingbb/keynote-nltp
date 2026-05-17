@@ -55,7 +55,7 @@
 
   <style>
     html { scroll-behavior: smooth; }
-    .hero-bg { background: linear-gradient(135deg, #07142a 0%, #0f172a 55%, #1e1b4b 100%); }
+    .hero-bg { background: linear-gradient(135deg, rgba(7,20,42,0.88) 0%, rgba(15,23,42,0.85) 55%, rgba(30,27,75,0.88) 100%), url('images/keynote-event-bg.jpg') center/cover no-repeat; }
     .stat-card { backdrop-filter: blur(12px); background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); }
     .section-alt { background: #f8fafc; }
     .cta-glow { box-shadow: 0 0 40px rgba(245,158,11,0.35); }
@@ -130,6 +130,11 @@
   "embedUrl": "https://www.youtube.com/embed/VkTwjxZ3KJg",
   "contentUrl": "https://youtu.be/VkTwjxZ3KJg",
   "uploadDate": "2024-01-01",
+  "potentialAction": {
+    "@type": "SeekToAction",
+    "target": "https://youtu.be/VkTwjxZ3KJg?t={seek_to_second_number}",
+    "startOffset-input": "required name=seek_to_second_number"
+  },
   "author": {
     "@type": "Person",
     "name": "Stephen Jepson"
@@ -146,6 +151,11 @@
   "embedUrl": "https://www.youtube.com/embed/WhYhofOs3KU",
   "contentUrl": "https://youtu.be/WhYhofOs3KU",
   "uploadDate": "2024-01-01",
+  "potentialAction": {
+    "@type": "SeekToAction",
+    "target": "https://youtu.be/WhYhofOs3KU?t={seek_to_second_number}",
+    "startOffset-input": "required name=seek_to_second_number"
+  },
   "author": {
     "@type": "Person",
     "name": "Stephen Jepson"
@@ -162,12 +172,19 @@
   "embedUrl": "https://www.youtube.com/embed/m6KrVBWtE_0",
   "contentUrl": "https://youtu.be/m6KrVBWtE_0",
   "uploadDate": "2024-01-01",
+  "potentialAction": {
+    "@type": "SeekToAction",
+    "target": "https://youtu.be/m6KrVBWtE_0?t={seek_to_second_number}",
+    "startOffset-input": "required name=seek_to_second_number"
+  },
   "author": {
     "@type": "Person",
     "name": "Stephen Jepson"
   }
 }
   </script>
+  <link rel="icon" type="image/png" href="https://neverleavetheplayground.com/logo.png">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1260113252267375" crossorigin="anonymous"></script>
 </head>
 <body class="font-display bg-white text-gray-900 antialiased">
 
@@ -251,9 +268,9 @@
   <section id="about" class="py-24 bg-white">
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
       <div class="grid grid-cols-2 gap-4">
-        <img src="images/stephen-gym.jpg" alt="Stephen in the gym"
+        <img src="images/stephen-gym.jpg" alt="Stephen Jepson speaking at fitness conference"
              class="rounded-2xl w-full h-48 object-cover shadow-lg col-span-1">
-        <img src="images/Anchorpoint.Training.Stephen.Jepson2.jpg" alt="Stephen training"
+        <img src="images/keynote-speaker-2.jpg" alt="Stephen Jepson on stage as keynote speaker"
              class="rounded-2xl w-full h-48 object-cover shadow-lg col-span-1 mt-8">
         <img src="https://keep-moving.netlify.app/speaking-events_files/keynote-speaker-2.jpg"
              alt="Stephen Jepson on stage as keynote speaker"
@@ -515,7 +532,7 @@
         Stephen speaks at wellness conferences, HR summits, healthcare organizations, universities, and corporate wellness programs. Check availability and get your custom quote.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="https://never-leave-the-playground.mailchimpsites.com/" target="_blank"
+        <a href="https://neverleavetheplayground.com/" target="_blank"
            class="bg-stage-400 hover:bg-stage-300 text-gray-900 font-black px-10 py-5 rounded-xl text-lg transition cta-glow">
           Check Availability &amp; Book
         </a>
