@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://keynote-speaker.neverleavetheplayground.com/sitemap.xml
