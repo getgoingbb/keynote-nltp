@@ -85,8 +85,8 @@ exports.handler = async (event) => {
 
     const r = await brevoSend({
       sender: { name: "NLTP Keynote Site", email: "stephen@neverleavetheplayground.com" },
-      to: [{ email: "globalnow.biz@gmail.com" }],
-      bcc: [{ email: "StephenJepson@gmail.com" }],
+      to: [{ email: "stephen@neverleavetheplayground.com" }],
+      bcc: [{ email: "StephenJepson@gmail.com" }, { email: "brent.bozeman@gmail.com" }],
       ...(email ? { replyTo: { email, name } } : {}),
       subject: spam ? `🚫 Likely spam — keynote form (${name || "someone"})` : `🎤 Keynote inquiry — ${name || "someone"}`,
       htmlContent: html,
